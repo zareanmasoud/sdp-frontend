@@ -1,0 +1,5 @@
+<div ng-click="$event.stopPropagation()">
+    <a ui-sref="root.app.application.applications.applicationVersions.editApplicationVersion({package_name : grid.appScope.package_name, version_code : row.entity.version_code})"
+       class="btn btn-icon-only default" uib-tooltip="{{'Edit'|translate}}">
+        <i class="fa fa-edit"></i> </a>
+</div>

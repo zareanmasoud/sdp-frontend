@@ -1,0 +1,115 @@
+<div class="portlet light bordered">
+    <div class="portlet-title">
+        <div class="caption font-green-sharp">
+            <i class="icon-note font-green-sharp"></i>{{formTitle}}
+        </div>
+        <div class="tools">
+            <a class="collapse"> </a> <a class="fullscreen"> </a> <a class="reload-portlet" ng-click="reload()"> </a>
+        </div>
+    </div>
+    <!-- BEGIN FORM-->
+    <div id="form" class="portlet-body form">
+        <form class="form-horizontal" name="forms.myForm" ng-submit="submit()" role="form" novalidate>
+            <div class="form-body">
+
+                <div class="form-group"
+                     ng-class="{ 'has-error' : forms.myForm.developer_id.$invalid && forms.myForm.developer_id.$touched }">
+                    <label class="col-md-3 control-label" for="developer_id" translate>Developer</label>
+                    <div class="col-md-4">
+                        <select required convert-to-number ng-model="formData.developer_id"
+                                ng-options="item.id.toString() as item.title for item in developers"
+                                name="developer_id" id="developer_id" data-style="blue" class="bs-select form-control"></select>
+                        <span ng-show="forms.myForm.developer_id.$error.required && forms.myForm.developer_id.$touched"
+                              class="help-block" translate>Please fill this field</span>
+                    </div>
+                </div>
+
+                <!--<div ng-if="isEdit" class="form-group">-->
+                    <!--<label class="col-md-3 control-label" for="id" translate>ID</label>-->
+                    <!--<div class="col-md-4">-->
+                        <!--<input readonly ng-model="formData.id" name="id" id="id" type="text" class="form-control">-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <div ng-disabled="isEdit" class="form-group" ng-class="{ 'has-error' : forms.myForm.package_name.$invalid && forms.myForm.package_name.$touched }">
+                    <label class="col-md-3 control-label" for="package_name" translate>Package Name</label>
+                    <div class="col-md-4">
+                        <input autofocus ng-model="formData.package_name" name="package_name" id="package_name" type="text" class="form-control ltr" required>
+                        <span ng-show="forms.myForm.package_name.$error.required && forms.myForm.package_name.$touched" class="help-block" translate>Please fill this field</span>
+                    </div>
+                </div>
+
+                <div class="form-group" ng-class="{ 'has-error' : forms.myForm.title.$invalid && forms.myForm.title.$touched }">
+                    <label class="col-md-3 control-label" for="title" translate>Title</label>
+                    <div class="col-md-4">
+                        <input ng-model="formData.title" name="title" id="title" type="text" class="form-control" required>
+                        <span ng-show="forms.myForm.title.$error.required && forms.myForm.title.$touched" class="help-block" translate>Please fill this field</span>
+                    </div>
+                </div>
+
+                <div ng-if="isEdit" ng-disabled="true" class="form-group" ng-class="{ 'has-error' : forms.myForm.api_key.$invalid && forms.myForm.api_key.$touched }">
+                    <label class="col-md-3 control-label" for="api_key" translate>Api-key</label>
+                    <div class="col-md-4">
+                        <label ng-bind="formData.api_key" name="api_key" id="api_key" class="form-control ltr"></label>
+                    </div>
+                </div>
+
+                <br/>
+
+                <!--<div class="form-group"-->
+                     <!--ng-class="{ 'has-error' : forms.myForm.icon.$invalid && forms.myForm.icon.$touched }">-->
+                    <!--<label class="col-md-3 control-label" for="icon" translate>Icon</label>-->
+                    <!--<div class="col-md-4">-->
+                        <!--<input required type="file" id="icon" file-model="formData.icon" name="icon" class="form-control">-->
+                        <!--<span ng-show="forms.myForm.icon.$error.required && forms.myForm.icon.$touched"-->
+                              <!--class="help-block" translate>Please fill this field</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="form-group"-->
+                     <!--ng-class="{ 'has-error' : forms.myForm.screenshots.$invalid && forms.myForm.screenshots.$touched }">-->
+                    <!--<label class="col-md-3 control-label" for="screenshots" translate>Screenshots</label>-->
+                    <!--<div class="col-md-4">-->
+                        <!--<input required type="file" id="screenshots" file-model="formData.screenshots" name="screenshots" class="form-control">-->
+                        <!--<span ng-show="forms.myForm.screenshots.$error.required && forms.myForm.screenshots.$touched"-->
+                              <!--class="help-block" translate>Please fill this field</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <div class="form-group"
+                     ng-class="{ 'has-error' : forms.myForm.category_id.$invalid && forms.myForm.category_id.$touched }">
+                    <label class="col-md-3 control-label" for="category_id" translate>Category ID</label>
+                    <div class="col-md-4">
+                        <select required convert-to-number ng-model="formData.category_id"
+                                ng-options="item.id.toString() as item.title for item in categories"
+                                name="category_id" id="category_id" data-style="blue" class="bs-select form-control"></select>
+                        <span ng-show="forms.myForm.category_id.$error.required && forms.myForm.category_id.$touched"
+                              class="help-block" translate>Please fill this field</span>
+                    </div>
+                </div>
+
+                <br/>
+
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="description" translate>Description</label>
+                    <div class="col-md-4">
+                        <textarea ng-model="formData.description" name="description" id="description" type="text" class="form-control ltr" rows="4"></textarea>
+                    </div>
+                </div>
+
+                <br/>
+            </div>
+            <div class="form-actions">
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-9">
+                        <button type="submit" class="btn btn-success btn-s" ng-disabled="forms.myForm.$invalid || forms.myForm.$pristine" translate>
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <!-- END FORM-->
+</div>

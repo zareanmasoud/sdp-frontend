@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'YekanWeb Regular';
+    src: url('../fonts/YekanWeb-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'YekPezeshkSerif Regular';
+    src: url('../fonts/YekPezeshkSerif-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    font-weight: 400;
+    src: url('../fonts/Vazir-persian-digits-overwrite.woff') format('woff');
+}
+
+@font-face {
+    font-family: Vazir;
+    font-weight: 700;
+    src: url('../fonts/Vazir-Bold-persian-digits-overwrite.woff') format('woff');
+}
+
+@font-face {
+    font-family: VazirEn;
+    font-weight: 400;
+    src: url('../fonts/Vazir.woff') format('woff');
+}
+
+@font-face {
+    font-family: VazirEn;
+    font-weight: 700;
+    src: url('../fonts/Vazir-Bold.woff') format('woff');
+}

@@ -1,0 +1,109 @@
+<div class="portlet light bordered">
+    <div class="portlet-title">
+        <div class="caption font-green-sharp">
+            <i class="icon-note font-green-sharp"></i>Validation
+        </div>
+        <div class="tools">
+            <a class="collapse"> </a> <a class="fullscreen"> </a> <a class="reload-portlet" ng-click="reload()"> </a>
+        </div>
+    </div>
+    <!-- BEGIN FORM-->
+    <div id="form" class="portlet-body form">
+        <form class="form-horizontal" ng-submit="submit()" role="form" name="forms.myForm" novalidate>
+            <div class="form-body">
+
+                <div class="form-group" ng-class="{ 'has-error' : forms.myForm.required1.$invalid }">
+                    <label class="col-md-3 control-label" for="required1">Required</label>
+
+                    <div class="col-md-4">
+                        <div class="input-group ">
+                            <input ng-model="formData.required1" id="required1" name="required1" type="text" autofocus class="form-control" required>
+                            <span class="input-group-addon" ng-class="{ 'font-green' : forms.myForm.required1.$dirty }">Dirty</span>
+                            <span class="input-group-addon" ng-class="{ 'font-green' : forms.myForm.required1.$valid }">Valid</span>
+                            <span class="input-group-addon" ng-class="{ 'font-green' : forms.myForm.required1.$invalid }">Invalid</span>
+                            <span class="input-group-addon" ng-class="{ 'font-green' : forms.myForm.required1.$pristine }">Pristine</span>
+                            <span class="input-group-addon" ng-class="{ 'font-green' : forms.myForm.required1.$touched }">Touched</span>
+                        </div>
+                        <span ng-show="forms.myForm.required1.$error.required" class="help-block">This field is required</span>
+                    </div>
+                </div>
+
+                <div class="form-group" ng-class="{ 'has-error' : forms.myForm.length1.$invalid }">
+                    <label class="col-md-3 control-label" for="length1">Length</label>
+
+                    <div class="col-md-4">
+                        <input ng-model="formData.length1" id="length1" name="length1" type="text" ng-minlength="3" ng-maxlength="8" class="form-control" required>
+                        <span ng-show="forms.myForm.length1.$error.required" class="help-block">This field is required</span>
+                        <span ng-show="forms.myForm.length1.$error.minlength" class="help-block">This field is too short</span>
+                        <span ng-show="forms.myForm.length1.$error.maxlength" class="help-block">This field is too long</span>
+                    </div>
+                </div>
+
+                <div class="form-group" ng-class="{ 'has-error' : forms.myForm.email1.$invalid }">
+                    <label class="col-md-3 control-label" for="email1">Email</label>
+
+                    <div class="col-md-4">
+                        <input ng-model="formData.email1" id="email1" name="email1" type="email" class="form-control">
+                        <span ng-show="forms.myForm.email1.$error.email" class="help-block">Invalid email entered</span>
+                    </div>
+                </div>
+
+                <div class="form-group" ng-class="{ 'has-error' : forms.myForm.url1.$invalid }">
+                    <label class="col-md-3 control-label" for="url1">Url</label>
+
+                    <div class="col-md-4">
+                        <input ng-model="formData.url1" id="url1" name="url1" type="url" class="form-control">
+                        <span ng-show="forms.myForm.url1.$error.url" class="help-block">Invalid url entered</span>
+                    </div>
+                </div>
+
+                <div class="form-group" ng-class="{ 'has-error' : forms.myForm.number1.$invalid }">
+                    <label class="col-md-3 control-label" for="number1">Number</label>
+
+                    <div class="col-md-4">
+                        <input ng-model="formData.number1" id="number1" name="number1" type="number" min="1" max="10" class="form-control">
+                        <span ng-show="forms.myForm.number1.$error.min" class="help-block">less than minimum number</span>
+                        <span ng-show="forms.myForm.number1.$error.max" class="help-block">Maximum number exceeded</span>
+                    </div>
+                </div>
+
+                <div class="form-group" ng-class="{ 'has-error' : forms.myForm.time1.$invalid }">
+                    <label class="col-md-3 control-label" for="time1">Time</label>
+
+                    <div class="col-md-4">
+                        <p class="input-group">
+                            <input type="datetime" fa-datetimepicker class="form-control fa-datepicker" id="time1" name="time1" required datetime ng-model="formData.time1">
+                            <span class="input-group-btn">
+                                <span class="input-group-addon bootstrap-touchspin-postfix">
+                                    <i class="glyphicon glyphicon-calendar"></i>
+                                </span>
+                            </span>
+                        </p>
+                        <span ng-show="forms.myForm.time1.$error.required" class="help-block">Please fill this field</span>
+
+                        <span ng-show="forms.myForm.time1.$error.datetime" class="help-block">Invalid date time</span>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <div class="row">
+                        <div class="col-md-offset-3 col-md-9">
+                            <button type="submit" class="btn btn-success btn-s" ng-disabled="forms.myForm.$invalid || forms.myForm.$pristine">Submit
+                            </button>
+                            <button type="button" class="btn" ng-disabled="!forms.myForm.$valid">Valid
+                            </button>
+                            <button type="button" class="btn" ng-disabled="!forms.myForm.$invalid">Invalid
+                            </button>
+                            <button type="button" class="btn" ng-disabled="!forms.myForm.$pristine">Pristine
+                            </button>
+                            <button type="button" class="btn" ng-disabled="!forms.myForm.$dirty">Dirty
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <!-- END FORM-->
+</div>

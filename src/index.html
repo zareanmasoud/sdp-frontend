@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="{{ lang }}" class="ie8 no-js" data-ng-app="SdpApp" ng-controller="AppController"> <![endif]-->
+<!--[if IE 9]>
+<html lang="{{ lang }}" class="ie9 no-js" data-ng-app="SdpApp" ng-controller="AppController"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="{{ lang }}" data-ng-app="SdpApp" ng-controller="AppController">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+
+<head>
+    <title data-ng-bind="'Vada SDP | ' + gettextCatalog($state.current.data.pageTitle)"></title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+    <!-- build:style lib -->
+    <!-- /build -->
+
+    <!--build-css-start-->
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link rel="stylesheet" href="assets/lib/bower_components/icheck/skins/all.css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+
+    <!-- bower:css -->
+    <link rel="stylesheet" href="assets/lib/bower_components/angular-toastr/dist/angular-toastr.css" />
+    <link rel="stylesheet" href="assets/lib/bower_components/animate.css/animate.css" />
+    <link rel="stylesheet" href="assets/lib/bower_components/ng-table/dist/ng-table.min.css" />
+    <link rel="stylesheet" href="assets/lib/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" href="assets/lib/bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css" />
+    <link rel="stylesheet" href="assets/lib/bower_components/components-font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="assets/lib/bower_components/simple-line-icons/css/simple-line-icons.css" />
+    <link rel="stylesheet" href="assets/lib/bower_components/jquery.atwho/dist/css/jquery.atwho.css" />
+    <link rel="stylesheet" href="assets/lib/bower_components/angular-ui-grid/ui-grid.css" />
+    <link rel="stylesheet" href="assets/lib/bower_components/jquery.tagsinput/src/jquery.tagsinput.css" />
+    <link rel="stylesheet" href="assets/lib/bower_components/angular-ui-select/dist/select.css" />
+    <!-- endbower -->
+    <!--build-css-end-->
+
+
+    <!-- build:style assets -->
+    <link type="text/css" rel="stylesheet" href="assets/css/custom.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/fonts.css" />
+    <!-- /build -->
+    <!-- END THEME STYLES -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+</head>
+
+<body ng-class="{'page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid page-footer-fixed': true, 'login': false}">
+    <div ui-view></div>
+</body>
+
+<!-- build:script lib -->
+<!-- /build -->
+
+
+<!--build-js-start-->
+
+<!-- BEGIN METRONIC ASSETS -->
+<script type="text/javascript" src="assets/lib/bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="assets/lib/bower_components/jquery-slimscroll/jquery.slimscroll.js"></script>
+<!-- END METRONIC ASSETS -->
+
+<!-- bower:js -->
+<script src="assets/lib/bower_components/angular/angular.js"></script>
+<script src="assets/lib/bower_components/angular-animate/angular-animate.js"></script>
+<script src="assets/lib/bower_components/angular-resource/angular-resource.js"></script>
+<script src="assets/lib/bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+<script src="assets/lib/bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+<script src="assets/lib/bower_components/angular-gettext/dist/angular-gettext.js"></script>
+<script src="assets/lib/bower_components/ng-table/dist/ng-table.min.js"></script>
+<script src="assets/lib/bower_components/moment/moment.js"></script>
+<script src="assets/lib/bower_components/moment-jalaali/build/moment-jalaali.js"></script>
+<script src="assets/lib/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+<script src="assets/lib/bower_components/bootstrap-switch/dist/js/bootstrap-switch.js"></script>
+<script src="assets/lib/bower_components/angular-bootstrap-switch/dist/angular-bootstrap-switch.js"></script>
+<script src="assets/lib/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="assets/lib/bower_components/angular-input-masks/angular-input-masks-standalone.js"></script>
+<script src="assets/lib/bower_components/icheck/icheck.min.js"></script>
+<script src="assets/lib/bower_components/blockUI/jquery.blockUI.js"></script>
+<script src="assets/lib/bower_components/jquery-slimscroll/jquery.slimscroll.js"></script>
+<script src="assets/lib/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="assets/lib/bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="assets/lib/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="assets/lib/bower_components/Caret.js/dist/jquery.caret.min.js"></script>
+<script src="assets/lib/bower_components/jquery.atwho/dist/js/jquery.atwho.js"></script>
+<script src="assets/lib/bower_components/checklist-model/checklist-model.js"></script>
+<script src="assets/lib/bower_components/angular-ui-grid/ui-grid.js"></script>
+<script src="assets/lib/bower_components/jquery-ui/jquery-ui.js"></script>
+<script src="assets/lib/bower_components/angular-ui-sortable/sortable.js"></script>
+<script src="assets/lib/bower_components/angular-bootstrap-confirm/dist/angular-bootstrap-confirm.js"></script>
+<script src="assets/lib/bower_components/jquery.tagsinput/src/jquery.tagsinput.js"></script>
+<script src="assets/lib/bower_components/highcharts-ng/dist/highcharts-ng.js"></script>
+<script src="assets/lib/bower_components/highcharts/highcharts.js"></script>
+<script src="assets/lib/bower_components/highcharts/highcharts-more.js"></script>
+<script src="assets/lib/bower_components/highcharts/modules/exporting.js"></script>
+<script src="assets/lib/bower_components/flow.js/dist/flow.js"></script>
+<script src="assets/lib/bower_components/ng-flow/dist/ng-flow.js"></script>
+<script src="assets/lib/bower_components/angular-deckgrid/angular-deckgrid.js"></script>
+<script src="assets/lib/bower_components/angular-gravatar/build/angular-gravatar.js"></script>
+<script src="assets/lib/bower_components/angular-breadcrumb/release/angular-breadcrumb.js"></script>
+<script src="assets/lib/bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
+<script src="assets/lib/bower_components/angular-fcsa-number/src/fcsaNumber.js"></script>
+<script src="assets/lib/bower_components/angular-ui-select/dist/select.js"></script>
+<script src="assets/lib/bower_components/moment-timezone/builds/moment-timezone-with-data-2012-2022.js"></script>
+<script src="assets/lib/bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="assets/lib/bower_components/oclazyload/dist/ocLazyLoad.js"></script>
+<script src="assets/lib/bower_components/ng-file-upload/ng-file-upload.js"></script>
+<!-- endbower -->
+
+<!--build-js-end-->
+
+
+<!-- build:script metronic -->
+
+<script type="text/javascript" src="assets/lib/metronic/theme_rtl/assets/global/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/lib/metronic/theme_rtl/assets/global/plugins/MdBootstrapPersianDateTimePicker/js/jalaali.js"></script>
+<script type="text/javascript" src="assets/lib/metronic/theme_rtl/assets/global/plugins/MdBootstrapPersianDateTimePicker/js/jquery.Bootstrap-PersianDateTimePicker.js"></script>
+<script type="text/javascript" src="assets/lib/metronic/theme_rtl/assets/global/scripts/metronic.js"></script>
+<script type="text/javascript" src="assets/lib/metronic/theme_rtl/assets/admin/layout/scripts/layout.js"></script>
+<script type="text/javascript" src="assets/lib/metronic/theme_rtl/assets/admin/layout/scripts/quick-sidebar.js"></script>
+<script type="text/javascript" src="assets/lib/metronic/theme_rtl/assets/global/scripts/wordifyfa.js"></script>
+<!-- /build -->
+
+<!-- build:script app -->
+
+<script type="text/javascript" src="app/app.js"></script>
+<script type="text/javascript" src="app/config.js"></script>
+<script type="text/javascript" src="app/constants.js"></script>
+<script type="text/javascript" src="app/route.js"></script>
+<script type="text/javascript" src="app/run.js"></script>
+<!-- /build -->
+
+<!-- build:script languages -->
+
+<script type="text/javascript" src="assets/languages/js/translations.js"></script>
+<!-- /build -->
+
+<!-- build:script factories -->
+
+<script type="text/javascript" src="app/core/factories/acl.js"></script>
+<script type="text/javascript" src="app/core/factories/auth.js"></script>
+<script type="text/javascript" src="app/core/factories/base.js"></script>
+<script type="text/javascript" src="app/core/factories/base64.js"></script>
+<script type="text/javascript" src="app/core/factories/general.js"></script>
+<script type="text/javascript" src="app/core/factories/http-interceptor.js"></script>
+<script type="text/javascript" src="app/core/factories/notification.js"></script>
+<script type="text/javascript" src="app/core/factories/settings.js"></script>
+<script type="text/javascript" src="app/core/factories/ui-grid.js"></script>
+<script type="text/javascript" src="app/core/factories/ui-handler.js"></script>
+<!-- /build -->
+
+<!-- build:script directives -->
+
+<script type="text/javascript" src="app/core/directives/a.js"></script>
+<script type="text/javascript" src="app/core/directives/autofocus.js"></script>
+<script type="text/javascript" src="app/core/directives/convert-to-number.js"></script>
+<script type="text/javascript" src="app/core/directives/datepicker.js"></script>
+<script type="text/javascript" src="app/core/directives/dir-change.js"></script>
+<script type="text/javascript" src="app/core/directives/fileModel.js"></script>
+<script type="text/javascript" src="app/core/directives/icheck.js"></script>
+<script type="text/javascript" src="app/core/directives/ng-model-onblur.js"></script>
+<script type="text/javascript" src="app/core/directives/ng-spinner-bar.js"></script>
+<script type="text/javascript" src="app/core/directives/non-ascii.js"></script>
+<script type="text/javascript" src="app/core/directives/string-to-number.js"></script>
+<script type="text/javascript" src="app/core/directives/tag-input.js"></script>
+<script type="text/javascript" src="app/core/directives/validation.js"></script>
+<!-- /build -->
+
+<!-- build:script widgets -->
+
+<script type="text/javascript" src="app/widgets/cardTags/cardTags.js"></script>
+<script type="text/javascript" src="app/widgets/sms-area/sms-area.directive.js"></script>
+<script type="text/javascript" src="app/widgets/vendor-select/vendor-select.directive.js"></script>
+<!-- /build -->
+
+<!-- build:script filters -->
+
+<script type="text/javascript" src="app/core/filters/bytes.js"></script>
+<script type="text/javascript" src="app/core/filters/comma.js"></script>
+<script type="text/javascript" src="app/core/filters/cut.js"></script>
+<script type="text/javascript" src="app/core/filters/jalali.js"></script>
+<script type="text/javascript" src="app/core/filters/map-dropdown.js"></script>
+<script type="text/javascript" src="app/core/filters/nl2br.js"></script>
+<script type="text/javascript" src="app/core/filters/reverse.js"></script>
+<script type="text/javascript" src="app/core/filters/tooman.js"></script>
+<!-- /build -->
+
+<!-- build:script controllers -->
+
+<script type="text/javascript" src="app/application/application-manager/application-documents/application-documents.controller.js"></script>
+<script type="text/javascript" src="app/application/application-manager/edit-application/edit-application.controller.js"></script>
+<script type="text/javascript" src="app/application/application-manager/list-applications/list-applications.controller.js"></script>
+<script type="text/javascript" src="app/application/application-manager/new-application/new-application.controller.js"></script>
+<script type="text/javascript" src="app/application/application-version-manager/edit-application-version/edit-application-version.controller.js"></script>
+<script type="text/javascript" src="app/application/application-version-manager/list-application-versions/list-application-versions.controller.js"></script>
+<script type="text/javascript" src="app/application/application-version-manager/new-application-version/new-application-version.controller.js"></script>
+<script type="text/javascript" src="app/application/category-manager/edit-category/edit-category.controller.js"></script>
+<script type="text/javascript" src="app/application/category-manager/list-categories/list-categories.controller.js"></script>
+<script type="text/javascript" src="app/application/category-manager/new-category/new-category.controller.js"></script>
+<script type="text/javascript" src="app/application/product-manager/edit-product/edit-product.controller.js"></script>
+<script type="text/javascript" src="app/application/product-manager/list-products/list-products.controller.js"></script>
+<script type="text/javascript" src="app/application/product-manager/new-product/new-product.controller.js"></script>
+<script type="text/javascript" src="app/dashboard/dashboard.controller.js"></script>
+<script type="text/javascript" src="app/layouts/app/app.controller.js"></script>
+<script type="text/javascript" src="app/layouts/footer/footer.controller.js"></script>
+<script type="text/javascript" src="app/layouts/header/notification/notification.controller.js"></script>
+<script type="text/javascript" src="app/layouts/header/user-menu/user-menu.controller.js"></script>
+<script type="text/javascript" src="app/layouts/quick-sidebar/quick-sidebar.controller.js"></script>
+<script type="text/javascript" src="app/layouts/sidebar/sidebar.controller.js"></script>
+<script type="text/javascript" src="app/layouts/theme-panel/theme-panel.controller.js"></script>
+<script type="text/javascript" src="app/login/login.controller.js"></script>
+<script type="text/javascript" src="app/user/profile-user/language/language.controller.js"></script>
+<script type="text/javascript" src="app/user/profile-user/profile-user.controller.js"></script>
+<!-- /build -->
+
+<!-- build:script services -->
+
+<script type="text/javascript" src="app/application/application-manager/application-manager.service.js"></script>
+<script type="text/javascript" src="app/application/application-version-manager/application-version-manager.service.js"></script>
+<script type="text/javascript" src="app/application/category-manager/category-manager.service.js"></script>
+<script type="text/javascript" src="app/application/developer.service.js"></script>
+<script type="text/javascript" src="app/application/product-manager/product.service.js"></script>
+<script type="text/javascript" src="app/user/user.service.js"></script>
+<!-- /build -->
+
+<!-- build:script routes -->
+
+<script type="text/javascript" src="app/application/application-manager/application-manager.route.js"></script>
+<script type="text/javascript" src="app/application/application-version-manager/application-version-manager.route.js"></script>
+<script type="text/javascript" src="app/application/application.route.js"></script>
+<script type="text/javascript" src="app/application/category-manager/category-manager.route.js"></script>
+<script type="text/javascript" src="app/application/product-manager/product-manager.route.js"></script>
+<script type="text/javascript" src="app/dashboard/dashboard.route.js"></script>
+<script type="text/javascript" src="app/login/login.route.js"></script>
+<script type="text/javascript" src="app/user/user.route.js"></script>
+<script type="text/javascript" src="app/validation/validation.route.js"></script>
+<!-- /build -->
+
+<!-- START JAVASCRIPTS -->
+<script type="text/javascript">
+    /* Init Metronic's core jquery plugins and layout scripts */
+    $(document).ready(function() {
+        Metronic.init(); // Run metronic theme
+    });
+</script>
+<!-- END JAVASCRIPTS -->
+
+</html>

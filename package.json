@@ -1,0 +1,49 @@
+{
+  "name": "sdpApp",
+  "version": "0.0.0",
+  "description": "SDP AngularJS Frontend",
+  "repository": {
+    "type": "git",
+    "url": "git+https://git.vada.ir/sdp/frontend.git"
+  },
+  "license": "ISC",
+  "scripts": {
+    "start": "http-server -p 8084 src/",
+    "test": "./node_modules/karma/bin/karma start karma.conf.js"
+  },
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "grunt": "^0.4.0",
+    "grunt-angular-gettext": "^2.2.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-htmlmin": "^1.4.0",
+    "grunt-contrib-rename": "0.0.3",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-filerev": "^2.3.1",
+    "grunt-html-build": "^0.6.0",
+    "grunt-replace": "^1.0.1",
+    "grunt-shell": "^1.3.0",
+    "grunt-wiredep": "^3.0.1",
+    "http-server": "^0.9.0",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-angular-filesort": "^1.0.1",
+    "karma-cli": "^1.0.1",
+    "karma-coverage": "^0.4.2",
+    "karma-jasmine": "^1.0.2",
+    "karma-junit-reporter": "^1.1.0",
+    "karma-ng-html2js-preprocessor": "^1.0.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-wiredep": "^1.0.2"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "jshint": "^2.9.3"
+  }
+}

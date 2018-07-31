@@ -1,0 +1,89 @@
+<div class="portlet light bordered">
+    <div class="portlet-title">
+        <div class="caption font-green-sharp">
+            <i class="icon-note font-green-sharp"></i>{{formTitle}}
+        </div>
+        <div class="tools">
+            <a class="collapse"> </a> <a class="fullscreen"> </a> <a class="reload-portlet" ng-click="reload()"> </a>
+        </div>
+    </div>
+    <!-- BEGIN FORM-->
+    <div id="form" class="portlet-body form">
+        <form class="form-horizontal" name="forms.myForm" ng-submit="submit()" role="form" novalidate>
+            <div class="form-body">
+
+                <!--<div ng-if="isEdit" class="form-group">-->
+                    <!--<label class="col-md-3 control-label" for="id" translate>ID</label>-->
+                    <!--<div class="col-md-4">-->
+                        <!--<input readonly ng-model="formData.id" name="id" id="id" type="text" class="form-control">-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <div ng-if="isEdit" class="form-group" ng-class="{ 'has-error' : forms.myForm.version_code.$invalid && forms.myForm.version_code.$touched }">
+                    <label class="col-md-3 control-label" for="version_code" translate>Version Code</label>
+                    <div class="col-md-4">
+                        <input readonly required ng-model="formData.version_code" name="version_code" id="version_code" type="text" class="form-control">
+                        <span ng-show="forms.myForm.version_code.$error.required && forms.myForm.version_code.$touched" class="help-block" translate>Please fill this field</span>
+                    </div>
+                </div>
+
+                <div ng-if="!isEdit" class="form-group"
+                     ng-class="{ 'has-error' : forms.myForm.myFile.$invalid && forms.myForm.myFile.$touched }">
+                    <label class="col-md-3 control-label" for="myFile" translate>File</label>
+                    <div class="col-md-4">
+                        <input required type="file" id="myFile" file-model="formData.file" name="myFile" class="form-control">
+                        <span ng-show="forms.myForm.myFile.$error.required && forms.myForm.myFile.$touched"
+                              class="help-block" translate>Please fill this field</span>
+                    </div>
+
+                </div>
+
+                <div class="form-group" ng-class="{ 'has-error' : forms.myForm.title.$invalid && forms.myForm.title.$touched }">
+                    <label class="col-md-3 control-label" for="title" translate>Title</label>
+                    <div class="col-md-4">
+                        <input autofocus required ng-model="formData.title" name="title" id="title" type="text" class="form-control">
+                        <span ng-show="forms.myForm.title.$error.required && forms.myForm.title.$touched" class="help-block" translate>Please fill this field</span>
+                    </div>
+                </div>
+
+                <!--<div class="form-group"-->
+                     <!--ng-class="{ 'has-error' : forms.myForm.package_name.$invalid && forms.myForm.package_name.$touched }">-->
+                    <!--<label class="col-md-3 control-label" for="package_name" translate>Package Name</label>-->
+                    <!--<div class="col-md-4">-->
+                        <!--<input ng-disabled="true" ng-model="formData.package_name" name="package_name" id="package_name" type="text" class="form-control">-->
+                        <!--<span ng-show="forms.myForm.package_name.$error.required && forms.myForm.package_name.$touched"-->
+                              <!--class="help-block" translate>Please fill this field</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<input type = "file" file-model = "myFile"/>-->
+                <!--<button ng-click = "uploadFile()">upload me</button>-->
+
+                <!--<span>{{'invalid: ' + forms.myForm.myFile.$invalid}}</span>-->
+                <!--<span>{{'required: ' + forms.myForm.myFile.$error.required}}</span>-->
+                <!--<span>{{'touched: ' + forms.myForm.myFile.$touched}}</span>-->
+
+                <div class="form-group" ng-class="{ 'has-error' : forms.myForm.changelog.$invalid && forms.myForm.changelog.$touched }">
+                    <label class="col-md-3 control-label" for="changelog" translate>Changelog</label>
+                    <div class="col-md-4">
+                        <textarea ng-model="formData.changelog" rows="4" name="changelog" id="changelog" type="text" class="form-control" required></textarea>
+                        <span ng-show="forms.myForm.changelog.$error.required && forms.myForm.changelog.$touched" class="help-block" translate>Please fill this field</span>
+                    </div>
+                </div>
+
+                <br/>
+            </div>
+            <div class="form-actions">
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-9">
+                        <button type="submit" class="btn btn-success btn-s" translate>
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <!-- END FORM-->
+</div>

@@ -1,0 +1,14 @@
+<div class="mt-element-ribbon bg-grey-steel">
+    <div class="ribbon ribbon-color-primary uppercase">{{formData.title}}</div>
+    <div class="form-group" ng-class="{ 'has-error' : forms.myForm.api_key.$invalid && forms.myForm.api_key.$touched }">
+        <br/>
+        <br/>
+        <br/>
+        <label class="col-md-3 control-label ltr" for="api_key" translate>Api-key</label>
+        <div class="col-md-6">
+            <label ng-bind="formData.api_key" name="api_key" id="api_key" class="form-control ltr"></label>
+        </div>
+        <br/>
+        <br/>
+    </div>
+</div>

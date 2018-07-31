@@ -1,0 +1,6 @@
+{
+    "websocketServiceBaseUri": "ws://resto/ws/",
+    "apiServiceBaseUri": "http://127.0.0.1:8080",
+    "debug": true,
+    "test":false
+}

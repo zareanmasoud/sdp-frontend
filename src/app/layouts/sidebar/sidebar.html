@@ -1,0 +1,152 @@
+<div class="page-sidebar navbar-collapse collapse">
+    <!-- BEGIN SIDEBAR MENU -->
+    <!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+    <!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+    <!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+    <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+    <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+    <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+
+    <br>
+    <br>
+    <ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200"
+        ng-class="{'page-sidebar-menu-closed': settings.layout.pageSidebarClosed}">
+        <!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
+        <li class="sidebar-search-wrapper">
+
+        </li>
+
+        <li class="start" has-access-all-states="root.app.dashboard">
+            <a href="#/dashboard" ui-sref="root.app.dashboard">
+                <i class="icon-home"></i>
+                <span class="title" translate>Dashboard</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#/hermes/applications">
+                <i class="fa fa-tablet"></i>
+                <span ng-bind="selectedApplication.title" class="title" translate></span>
+                <span ng-bind="selectedApplication.version_title" class="title" translate></span>
+                <span class="arrow "></span>
+            </a>
+            <ul class="sub-menu">
+                <li ng-repeat="item in applications">
+                    <a href="#/hermes/applications/{{item.package_name}}/documents" ng-click="initiateApplication(item)">
+                        <i class="fa fa-tablet"></i>
+                        <span ng-bind="item.title" class="title" translate></span>
+                    </a>
+
+                    <li class="application-label" ng-if="true">
+                        <i class="fa fa-tablet"></i>
+                        <span  ng-bind="selectedApplication.title" class="title" translate></span>
+                    </li>
+                </li>
+            </ul>
+        </li>
+
+        <li ng-if="selectedApplication.package_name !== null">
+            <a href="#/hermes/applications/{{selectedApplication.package_name}}/documents">
+                <i class="fa fa-tablet"></i>
+                <span class="title" translate>Home</span>
+                <span class="arrow "></span>
+            </a>
+            <ul class="sub-menu">
+                <!--<li>-->
+                    <!--<a href="#/hermes/applications/{{selectedApplication.package_name}}/dashboard">-->
+                        <!--<i class="fa fa-tablet"></i>-->
+                        <!--<span class="title" translate>Dashboard</span>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <li>
+                    <a href="#/hermes/applications/{{selectedApplication.package_name}}/documents">
+                        <i class="fa fa-tablet"></i>
+                        <span class="title" translate>Documents</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li ng-if="selectedApplication.package_name !== null">
+            <a href="#/hermes/applications/{{selectedApplication.package_name}}/versions">
+                <i class="fa fa-tablet"></i>
+                <span class="title" translate>Versions</span>
+                <span class="arrow "></span>
+            </a>
+            <ul class="sub-menu">
+                <li>
+                    <a href="#/hermes/applications/{{selectedApplication.package_name}}/versions/new">
+                        <i class="fa fa-tablet"></i>
+                        <span class="title" translate>Add New Version</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#/hermes/applications/{{selectedApplication.package_name}}/versions">
+                        <i class="fa fa-tablet"></i>
+                        <span class="title" translate>Versions List</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li ng-if="selectedApplication.package_name !== null">
+            <a href="#/hermes/applications/{{selectedApplication.package_name}}/products">
+                <i class="fa fa-tablet"></i>
+                <span class="title" translate>Products</span>
+                <span class="arrow "></span>
+            </a>
+            <ul class="sub-menu">
+                <li>
+                    <a href="#/hermes/applications/{{selectedApplication.package_name}}/products/new">
+                        <i class="fa fa-tablet"></i>
+                        <span class="title" translate>Add New Product</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#/hermes/applications/{{selectedApplication.package_name}}/products">
+                        <i class="fa fa-tablet"></i>
+                        <span class="title" translate>Products List</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+
+        <!--<li>-->
+            <!--<a href="#/hermes">-->
+                <!--<i class="fa fa-tablet"></i>-->
+                <!--<span class="title" translate>Applications</span>-->
+                <!--<span class="arrow "></span>-->
+            <!--</a>-->
+            <!--<ul class="sub-menu">-->
+                <!--<li>-->
+                    <!--<a href="#/hermes/applications/new">-->
+                        <!--<i class="fa fa-tablet"></i>-->
+                        <!--<span class="title" translate>Add New Application</span>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--<li>-->
+                    <!--<a href="#/hermes/applications">-->
+                        <!--<i class="fa fa-tablet"></i>-->
+                        <!--<span class="title" translate>Applications List</span>-->
+                    <!--</a>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</li>-->
+
+        <!--<li>-->
+            <!--<a href="#/hermes/categories">-->
+                <!--<i class="fa fa-tablet"></i>-->
+                <!--<span class="title" translate>Categories</span>-->
+            <!--</a>-->
+        <!--</li>-->
+
+        <li>
+            <a href="#/profile/language">
+                <i class="icon-user-following"></i>
+                <span class="title" translate>User Profile</span>
+            </a>
+        </li>
+    </ul>
+    <!-- END SIDEBAR MENU -->
+</div>

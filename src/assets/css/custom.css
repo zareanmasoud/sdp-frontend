@@ -1,0 +1,515 @@
+body {
+    font-family: Vazir, Tahoma, sans-serif !important;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Vazir, Tahoma, sans-serif !important;
+}
+
+textarea {
+    font-family: 'VazirEn', Tahoma, sans-serif !important;
+}
+input {
+    font-family: 'VazirEn', sans-serif !important;
+    direction: ltr;
+}
+
+input:lang(fa) {
+    font-family: Vazir, sans-serif !important;
+    direction: rtl;
+}
+
+.fa-date {
+    font-family: 'Vazir', Tahoma, sans-serif !important;
+    direction: ltr;
+    text-align: right;
+}
+
+.rtl {
+    direction: rtl !important;
+}
+
+.fa-datepicker {
+    direction: ltr;
+    text-align: right;
+}
+.page-bar {
+    background: #f5f5f5 !important;
+}
+.page-title {
+    font-family: "YekanWeb Regular", Tahoma, sans-serif !important;
+}
+
+ul.page-sidebar-menu li a span.title {
+    font-family: Vazir, Tahoma, sans-serif;
+}
+
+div.caption {
+    font-family: Vazir, Tahoma, sans-serif;
+}
+
+h3.form-title {
+    font-family: Vazir, Tahoma, sans-serif;
+}
+
+div.dataTables_filter, div.dataTables_length label {
+    font-family: Vazir, Tahoma, sans-serif;
+}
+
+div.select2-result-label {
+    font-family: Vazir, Tahoma, sans-serif;
+}
+
+div.form-title {
+    font-family: Vazir, Tahoma, sans-serif;
+}
+
+span.help-inline {
+    font-family: Vazir, Tahoma, sans-serif;
+}
+
+div.select2-search input.select2-input {
+    font-family: Vazir, Tahoma, sans-serif;
+}
+
+input.form-control {
+    font-family: 'VazirEn', sans-serif !important;
+    direction: ltr;
+}
+
+input.form-control:lang(fa) {
+    font-family: Vazir, sans-serif !important;
+    direction: rtl;
+}
+
+input[type='email'],
+input[type='url'],
+input[type='color'],
+input[type='tel'],
+input[type='password']
+{
+    direction: ltr;
+    font-family: 'VazirEn', sans-serif !important;
+}
+
+input[type='tel']:lang(fa) {
+    direction: ltr;
+    font-family: Vazir, sans-serif !important;
+}
+
+button.btn {
+    font-family: "YekanWeb Regular", Tahoma, sans-serif;
+}
+
+a.header-dropdown-menu {
+    font-family: Vazir, Tahoma, sans-serif;
+}
+
+a {
+    font-family: Vazir, Tahoma, sans-serif;
+}
+.ui-grid-cell {
+    vertical-align: middle;
+    text-align: center;
+    line-height: 50px;
+}
+.ui-grid-cell-contents {
+    text-align: center;
+    font-family: 'VazirEn', sans-serif;
+    direction: ltr;
+}
+.ui-grid-cell-contents:lang(fa) {
+    text-align: center;
+    font-family: Vazir, sans-serif;
+    direction: rtl;
+}
+div.dataTables_info {
+    font-family: Vazir, Tahoma, sans-serif;
+}
+
+.ltr {
+    direction: ltr !important;
+}
+
+table.table-bordered tbody td {
+    text-align: center;
+    vertical-align: middle !important;
+    font-family: 'VazirEn', sans-serif;
+    direction: ltr !important;
+}
+
+table.table-bordered:lang(fa) tbody td {
+    text-align: center;
+    vertical-align: middle !important;
+    font-family: Vazir, sans-serif;
+    direction: rtl;
+}
+
+.table thead tr th {
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+text{
+    font-family: Vazir, Tahoma, sans-serif;
+}
+
+table.table-bordered tbody td.text-left {
+  text-align: right !important;
+}
+table.table-bordered tbody th {
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+label {
+    font-family: Vazir, Tahoma, sans-serif;
+}
+
+.page-footer .page-footer-inner {
+    float: left !important;
+    font-family: Vazir, Tahoma, sans-serif;
+}
+
+[lang='en'] .page-footer .page-footer-inner {
+    float: right !important;
+}
+
+.portlet > .portlet-title > .tools > a.reload-portlet {
+  background-image: url(../lib/metronic/theme_rtl/assets/global/img/portlet-reload-icon.png);
+  width: 13px;
+}
+.popover {
+  font-family: Vazir, Tahoma, sans-serif;
+}
+.input-group-addon{
+    line-height: inherit;
+}
+[ui-view].ng-enter {
+  transition: 1s;
+  opacity: 0; }
+[ui-view].ng-enter-active {
+  opacity: 1; }
+[ui-view].ng-leave {
+  transition: 0s;
+  opacity: 1; }
+[ui-view].ng-leave-active {
+  opacity: 0; }
+.checkbox-list-lable {
+    font-size: smaller;
+}
+
+div.tagsinput span.tag {
+    float: right;
+    margin-right: 0;
+    margin-left: 5px;
+}
+div.tagsinput div {
+    float: right;
+}
+button.confirm-button{
+    padding-right: inherit;
+    padding-left: inherit;
+}
+button.cancel-button{
+    padding-right: inherit;
+    padding-left: inherit;
+}
+
+.ui-grid-row:last-child .ui-grid-cell {
+    text-align: center;
+}
+.ui-grid-menu {
+    direction: ltr;
+}
+.table .btn{
+    margin-left: inherit;
+}
+.grid-image{
+    height: 31px;
+    width : 50px;
+}
+.rows{
+    height: 50px;
+}
+.disable{
+    color:gainsboro;
+}
+.content-title{
+    direction: ltr;
+    float: left;
+}
+.ribbon{
+    direction: ltr;
+}
+.sc{
+    max-height: 600px;
+    overflow: auto;
+    list-style-type: none;
+}
+.editable-buttons{
+    vertical-align: bottom;
+}
+.content-container {
+    border: 2px dashed blue;
+    margin: 10px 10px 0 0;
+    padding: 5px;
+    min-height:50px;
+    min-width:200px;
+}
+.content-item {
+    margin: 5px 0;
+    /*border: 2px solid #444;*/
+    border-radius: 5px;
+    background-color: #e9edef;
+    cursor: move;
+    border: 2px solid #444;
+}
+
+
+.deckgrid[deckgrid]::before {
+    /* Specifies that the grid should have a maximum of 4 columns. Each column will have the classes 'column' and 'column-1-4' */
+    content: '4 .column.column-1-4';
+    font-size: 0; /* See https://github.com/akoenig/angular-deckgrid/issues/14#issuecomment-35728861 */
+    visibility: hidden;
+}
+
+.deckgrid .column {
+    padding: 5px 10px;
+    float: left;
+}
+
+.deckgrid .column-1-4 {
+    width: 25%;
+}
+.deckgrid .column.size-1-5 {
+    width:200px;
+}
+
+.deckgrid .column.size-1-4 {
+    width:200px;
+}
+
+.deckgrid .column.size-1-3 {
+    width:250px;
+}
+
+.deckgrid .column.size-1-2 {
+    width:250px;
+}
+
+.deckgrid .column.size-1-1 {
+    width:280px;
+}
+
+@media screen and (max-width: 1200px) {
+    .deckgrid[deckgrid]::before {
+        content: '4 .column.size-1-4';
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .deckgrid[deckgrid]::before {
+        content: '3 .column.size-1-3';
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .deckgrid[deckgrid]::before {
+        content: '2 .column.size-1-2';
+    }
+}
+
+@media only screen and (max-device-width : 320px),
+only screen and (max-width : 480px) {
+
+    .deckgrid[deckgrid]::before {
+        content: '1 .column.size-1-1';
+    }
+}
+
+.portlet > .portlet-title > .tools > a.fa{
+    color: #BFBFBF;
+}
+
+.stack {
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+.stack-item{
+    margin: 5px 0;
+    /*border: 2px solid #444;*/
+    border-radius: 5px;
+    background-color: #e9edef;
+    border: 2px solid #444;
+}
+.first-stack {
+cursor: pointer;
+}
+div.stoptags div.tagsinput span.tag {
+    color: #842b2c;
+    background: #e690a0;
+    border: 1px solid #d24e4e;
+}
+
+div.stoptags div.tagsinput span.tag a {
+    font-weight: bold;
+    font-weight: bold;
+    color: #ad271f;
+    text-decoration: none;
+    font-size: 11px;
+}
+.tooltip{
+    z-index: 1;
+}
+
+.dropdown-menu-actions {
+    min-width: 150px;
+}
+
+.page-header.navbar .top-menu .navbar-nav > li.dropdown > .dropdown-toggle {
+    padding: 16px 10px 9px 10px;
+}
+
+.alert {
+    border: 1px dashed grey;
+    height: 100px;
+}
+
+.mt-code {
+    color: #cde69c;
+    margin-left: 5px;
+    border: 1px solid #a5d24a;
+    background: #638421;
+}
+
+/*fix height of ui-select-multiple,
+  after applying ng-disabled it becomes shrink that it's fixed*/
+.ui-select-multiple.ui-select-bootstrap {
+    min-height: 34px;
+    height: auto;
+    padding: .3em;
+}
+
+/*fix width of ui-select-match,
+  overrides ctrl.searchInput.css('width', '10px'); line in select.js in ui-select*/
+.ui-select-match + .ui-select-search,
+.ui-select-match + .ui-select-search input{
+    width: 100% !important;
+}
+
+/*TODO: applying with timestamps*/
+/*!*fix direction in ui-grid-cell-contents for persian*!*/
+/*.ui-grid-cell-contents {*/
+    /*direction: rtl;*/
+/*}*/
+
+/*fix ui-grid filter icon padding*/
+.ui-grid-filter-container .ui-grid-filter-button-select [class^="ui-grid-icon"] {
+    right: 10px;
+}
+
+/*fix ui-grid filter text padding & text*/
+select.ui-grid-filter-select {
+    padding: 0 20px 0 0;
+    width: 100%;
+}
+
+/*fix alignment of ui-grid dropdown filter*/
+.ui-grid-filter-container {
+    margin: auto;
+    width: 80%;
+}
+
+/*fix css finger cursor*/
+/*.ui-grid-row :hover {*/
+    /*cursor: pointer;*/
+/*}*/
+
+/*fix position of ui-select caret to left*/
+.ui-select-bootstrap .ui-select-toggle > .caret {
+    position: relative;
+}
+
+/*fix ui-select match text*/
+.ui-select-bootstrap > .ui-select-match > .btn {
+    text-align: right !important;
+}
+
+/*fix position of ui-select caret in the left from top*/
+.ui-select-bootstrap .ui-select-toggle > .caret {
+    right: 5px;
+    margin-top: -22px;
+}
+
+.spin{
+    -webkit-transform-origin: 50% 58%;
+    transform-origin:50% 58%;
+    -ms-transform-origin:50% 58%; /* IE 9 */
+    -webkit-animation: spin .8s infinite linear;
+    -moz-animation: spin .8s infinite linear;
+    -o-animation: spin .8s infinite linear;
+    animation: spin .8s infinite linear;
+}
+
+
+@-moz-keyframes spin {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*fixed minwidth of ribbons*/
+@media (min-width: 1200px) {
+    .col-lg-2 {
+        min-width: 400px;
+    }
+}
+
+/*fixed font for showing number characters in english. */
+div.en-num-font {
+    font-family: Tahoma, sans-serif !important;
+}
+
+/*fixed font for showing number characters in english. */
+span.en-num-font {
+    font-family: Tahoma, sans-serif !important;
+}
+
+/*fixed height of page-content based on browser height and content-based*/
+div .page-content {
+    height: 100vh;
+    display: block;
+    overflow: auto;
+}
+html, body, div .page-container {
+    height: 100%;
+}
+li.application-label {
+    color: #777777;
+    padding-top: 25px !important;
+}

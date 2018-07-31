@@ -1,0 +1,45 @@
+<div class="portlet light bordered">
+    <div class="portlet-title">
+        <div class="caption font-green-sharp">
+            <i class="icon-note font-green-sharp"></i>{{formTitle}}
+        </div>
+        <div class="tools">
+            <a class="collapse"> </a> <a class="fullscreen"> </a> <a class="reload-portlet" ng-click="reload()"> </a>
+        </div>
+    </div>
+    <!-- BEGIN FORM-->
+    <div id="form" class="portlet-body form">
+        <form class="form-horizontal" name="forms.myForm" ng-submit="submit()" role="form" novalidate>
+            <div class="form-body">
+
+                <div ng-if="isEdit" class="form-group">
+                    <label class="col-md-3 control-label" for="id" translate>ID</label>
+                    <div class="col-md-4">
+                        <input readonly ng-model="formData.id" name="id" id="id" type="text" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-group" ng-class="{ 'has-error' : forms.myForm.title.$invalid && forms.myForm.title.$touched }">
+                    <label class="col-md-3 control-label" for="title" translate>Title</label>
+                    <div class="col-md-4">
+                        <input ng-model="formData.title" name="title" id="title" type="text" autofocus class="form-control" required>
+                        <span ng-show="forms.myForm.title.$error.required && forms.myForm.title.$touched" class="help-block" translate>Please fill this field</span>
+                    </div>
+                </div>
+
+                <br/>
+            </div>
+            <div class="form-actions">
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-9">
+                        <button type="submit" class="btn btn-success btn-s" ng-disabled="forms.myForm.$invalid || forms.myForm.$pristine" translate>
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <!-- END FORM-->
+</div>

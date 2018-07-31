@@ -1,0 +1,36 @@
+<!-- BEGIN MAIN CONTENT -->
+<div class="portlet light bordered">
+    <div class="portlet-title">
+        <div class="caption font-green-sharp">
+            <i class="fa fa-list-ul font-green-sharp"></i>
+            <translate>Categories List</translate>
+        </div>
+        <div class="tools">
+            <a class="collapse"> </a> <a class="fullscreen"> </a>
+            <a class="reload-portlet" ng-click="reload()"> </a>
+        </div>
+        <div class="actions">
+            <div class="btn-group">
+                <button type="button" class="btn default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-angle-down"></i>
+                </button>
+                <a type="button" class="btn default" translate>Action</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li>
+                        <a ui-sref="root.app.application.categories.newCategory"> <i class="fa fa-plus"></i>
+                            <span translate>New Category</span> </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- BEGIN FORM-->
+    <div id="form" class="portlet-body">
+        <form class="form-horizontal" role="form">
+            <div class="form-body">
+                <div dir-change ui-grid-selection ui-grid-pagination ui-grid="gridOptions" class="grid" dir="rtl"></div>
+            </div>
+        </form>
+    </div>
+    <!-- END FORM-->
+</div><!-- END MAIN CONTENT -->

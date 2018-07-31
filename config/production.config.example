@@ -1,0 +1,6 @@
+{
+    "websocketServiceBaseUri": "ws://api.vsdp.ir",
+    "apiServiceBaseUri": "http://api.vsdp.ir",
+    "debug": false,
+    "test":false
+}

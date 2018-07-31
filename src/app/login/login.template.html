@@ -1,0 +1,57 @@
+<span class="login">
+    <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+    <div class="menu-toggler sidebar-toggler"></div>
+    <!-- END SIDEBAR TOGGLER BUTTON -->
+    <!-- BEGIN LOGO -->
+    <div class="logo">
+        <a href="#/login"> <img src="assets/images/logo.png" alt=""/> </a>
+    </div>
+    <!-- END LOGO -->
+    <!-- BEGIN LOGIN -->
+    <div class="content">
+        <!-- BEGIN LOGIN FORM -->
+        <form class="login-form" name="myForm" ng-submit="login(loginData)" role="form" ng-init="loginForm = {}" novalidate>
+            <h3 class="form-title" translate>Sign In</h3>
+
+            <div class="form-group" ng-class="{ 'has-error' : myForm.username.$error.required && myForm.username.$dirty }">
+                <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                <label class="control-label visible-ie8 visible-ie9" translate>Username</label>
+                <div class="input-icon">
+                    <i class="fa fa-user"></i>
+                    <input class="form-control form-control-solid placeholder-no-fix ltr" type="text" autocomplete="off" autofocus placeholder="{{'Username'|translate}}" name="username" ng-model="loginData.username" required/>
+                </div>
+            </div>
+            <div class="form-group" ng-class="{ 'has-error' : myForm.password.$error.required && myForm.password.$dirty }">
+                <label class="control-label visible-ie8 visible-ie9" translate>Password</label>
+                <div class="input-icon">
+                    <i class="fa fa-lock"></i>
+                    <input class="form-control form-control-solid placeholder-no-fix" type="password" autocomplete="off" placeholder="{{'Password'|translate}}" name="password" ng-model="loginData.password" required/>
+                </div>
+            </div>
+            <div class="form-actions">
+                <label class="rememberme check">
+                    <input class="icheck" icheck type="checkbox" css="icheckbox_flat-aero" name="remember" value="1" ng-model="loginData.remember_me"/>
+                    <translate>Remember</translate>
+                </label>
+                <button type="submit" ng-disabled="myForm.$invalid" class="btn btn-success pull-right swap" translate>
+                    Login
+                </button>
+            </div>
+        </form>
+        <!-- END LOGIN FORM --><br>
+        <div ng-show="errShow || (myForm.username.$error.required && !myForm.username.$pristine) || (myForm.password.$error.required && !myForm.password.$pristine)" class="alert alert-danger form-title">
+            <ul>
+                <li ng-show="errShow">
+                    <span>{{errMessage}}</span>
+                </li>
+                <li ng-show="myForm.username.$error.required && !myForm.username.$pristine">
+                    <span translate>Enter username.</span>
+                </li>
+                <li ng-show="myForm.password.$error.required && !myForm.password.$pristine">
+                    <span translate>Enter password.</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- END PAGE LEVEL SCRIPTS -->
+</span>

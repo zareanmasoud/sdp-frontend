@@ -1,0 +1,13 @@
+<div>
+    <div class="input-group col-lg-12  col-xs-12">
+        <div class="col-md-6 col-xs-12">
+            <label class="help-block" translate>Text</label>
+            <textarea id="inputor" rows="8" ng-model="text" class="form-control popovers" name="sms" required ></textarea>
+            <span class="help-block"><span translate>Length</span>: <span ng-bind="text.length"></span></span>
+        </div>
+        <div class="col-md-6 col-xs-12">
+            <label class="help-block" translate>Review</label>
+            <textarea rows="8" ng-bind="review" class="form-control" readonly></textarea>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,480 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/app/application/application-manager/list-applications/list-applications.controller.js:188
+#: src/app/application/application-manager/list-applications/list-applications.template.html:30
+#: src/app/application/application-version-manager/list-application-versions/list-application-versions.controller.js:127
+#: src/app/application/application-version-manager/list-application-versions/list-application-versions.template.html:17
+#: src/app/application/category-manager/list-categories/list-categories.controller.js:73
+#: src/app/application/category-manager/list-categories/list-categories.template.html:17
+#: src/app/application/product-manager/list-products/list-products.controller.js:98
+#: src/app/application/product-manager/list-products/list-products.template.html:15
+msgid "Action"
+msgstr "عملیات"
+
+#: src/app/layouts/sidebar/sidebar.html:102
+msgid "Add New Product"
+msgstr "محصول تازه"
+
+#: src/app/layouts/sidebar/sidebar.html:80
+msgid "Add New Version"
+msgstr "نسخه تازه"
+
+#: src/app/core/directives/tag-input.js:19
+msgid "Add a tag"
+msgstr "افزودن برچسب"
+
+#: src/app/layouts/footer/footer.html:1
+msgid "All Rights Reserved."
+msgstr "تمام حقوق این نرم افزار برای شرکت وادا می‌باشد."
+
+#: src/app/application/application-manager/application-documents/application-documents.template.html:7
+#: src/app/application/application-manager/application-form.partial.html:51
+msgid "Api-key"
+msgstr "کلید ای‌پی‌آی"
+
+#: src/app/application/application-manager/application-documents/application-documents.controller.js:8
+msgid "Application Documents"
+msgstr "مستندات برنامه"
+
+#: src/app/application/product-manager/product-form.partial.html:45
+msgid "Application Title"
+msgstr "عنوان برنامه"
+
+#: src/app/application/application-version-manager/list-application-versions/list-application-versions.template.html:6
+msgid "Application Versions List"
+msgstr "فهرست نسخه‌ها"
+
+#: src/app/application/application-manager/list-applications/list-applications.template.html:19
+msgid "Applications List"
+msgstr "فهرست برنامه‌ها"
+
+#: src/app/application/application-manager/list-applications/publish.partial.html:8
+#: src/app/application/application-manager/list-applications/verify.partial.html:8
+#: src/app/application/application-version-manager/list-application-versions/publish.partial.html:8
+#: src/app/application/application-version-manager/list-application-versions/verify.partial.html:8
+#: src/app/application/product-manager/list-products/publish.partial.html:8
+msgid "Cancel"
+msgstr "لغو"
+
+#: src/app/application/category-manager/list-categories/list-categories.template.html:6
+msgid "Categories List"
+msgstr "فهرست دسته‌ها"
+
+#: src/app/application/application-manager/list-applications/list-applications.controller.js:124
+msgid "Category"
+msgstr "دسته"
+
+#: src/app/application/application-manager/application-form.partial.html:81
+msgid "Category ID"
+msgstr "شناسه دسته"
+
+#: src/app/application/application-version-manager/application-version-form.partial.html:67
+msgid "Changelog"
+msgstr "تغییرات"
+
+#: src/app/application/application-manager/list-applications/publish.partial.html:7
+#: src/app/application/application-manager/list-applications/verify.partial.html:7
+#: src/app/application/application-version-manager/list-application-versions/publish.partial.html:7
+#: src/app/application/application-version-manager/list-application-versions/verify.partial.html:7
+#: src/app/application/product-manager/list-products/publish.partial.html:7
+msgid "Confirm"
+msgstr "تایید"
+
+#: src/app/application/category-manager/list-categories/list-categories.controller.js:57
+msgid "Created At"
+msgstr "ایجاد شده در"
+
+#: src/app/dashboard/dashboard.template.html:3
+#: src/app/layouts/sidebar/sidebar.html:22
+msgid "Dashboard"
+msgstr "داشبورد"
+
+#: src/app/application/application-manager/application-form.partial.html:94
+#: src/app/application/product-manager/product-form.partial.html:140
+msgid "Description"
+msgstr "توضیح"
+
+#: src/app/application/application-manager/application-form.partial.html:17
+#: src/app/application/application-manager/list-applications/list-applications.controller.js:130
+msgid "Developer"
+msgstr "توسعه‌دهنده"
+
+#: src/app/layouts/sidebar/sidebar.html:64
+msgid "Documents"
+msgstr "مستندات"
+
+#: src/app/application/application-manager/list-applications/action.partial.html:3
+#: src/app/application/application-version-manager/list-application-versions/action.partial.html:3
+#: src/app/application/category-manager/list-categories/action.partial.html:3
+#: src/app/application/product-manager/list-products/action.partial.html:2
+msgid "Edit"
+msgstr "ویرایش"
+
+#: src/app/application/application-manager/edit-application/edit-application.controller.js:8
+msgid "Edit Application"
+msgstr "ویرایش برنامه"
+
+#: src/app/application/application-version-manager/edit-application-version/edit-application-version.controller.js:9
+msgid "Edit Application Version"
+msgstr "ویرایش نسخه"
+
+#: src/app/application/category-manager/edit-category/edit-category.controller.js:7
+msgid "Edit Category"
+msgstr "شناسه دسته"
+
+#: src/app/application/product-manager/edit-product/edit-product.controller.js:9
+msgid "Edit Product"
+msgstr "ویرایش محصول"
+
+#: src/app/user/user.service.js:17
+msgid "En"
+msgstr "انگلیسی"
+
+#: src/app/application/application-manager/list-applications/publish.partial.html:9
+#: src/app/application/application-manager/list-applications/verify.partial.html:9
+#: src/app/application/application-version-manager/list-application-versions/publish.partial.html:9
+#: src/app/application/application-version-manager/list-application-versions/verify.partial.html:9
+#: src/app/application/product-manager/list-products/publish.partial.html:9
+msgid "Enable"
+msgstr "فعال‌سازی"
+
+#: src/app/user/user.service.js:13
+msgid "Fa"
+msgstr "پارسی"
+
+#: src/app/application/application-version-manager/application-version-form.partial.html:32
+msgid "File"
+msgstr "فایل"
+
+#: src/app/application/product-manager/product-form.partial.html:121
+msgid "Grace Period"
+msgstr "دوره تنفس"
+
+#: src/app/widgets/vendor-select/vendor-select.directive.js:18
+msgid "Hamrah-vas"
+msgstr "همراه-وس"
+
+#: src/app/layouts/app.html:7 src/app/layouts/sidebar/sidebar.html:51
+msgid "Home"
+msgstr "خانه"
+
+#: src/app/application/application-version-manager/list-application-versions/list-application-versions.controller.js:66
+#: src/app/application/category-manager/category-form.partial.html:16
+#: src/app/application/category-manager/list-categories/list-categories.controller.js:45
+#: src/app/application/product-manager/list-products/list-products.controller.js:56
+msgid "ID"
+msgstr "شناسه"
+
+#: src/app/application/product-manager/product.service.js:16
+msgid "InApp"
+msgstr "درون‌برنامه"
+
+#: src/app/core/factories/http-interceptor.js:63
+msgid "Index needs refresh :"
+msgstr "فهرست نیازمند به‌روزرسانی می‌باشد:"
+
+#: src/app/application/product-manager/product-form.partial.html:86
+msgid "Introductory Price"
+msgstr "برچسب قیمت"
+
+#: src/app/application/product-manager/product-form.partial.html:93
+msgid "Introductory Price Period"
+msgstr "برچسب دوره زمانی"
+
+#: src/app/user/profile-user/language/language.partial.html:25
+msgid "Language"
+msgstr "زبان"
+
+#: src/app/widgets/sms-area/sms-area.template.html:6
+msgid "Length"
+msgstr "طول"
+
+#: src/app/widgets/vendor-select/vendor-select.directive.js:22
+msgid "MTN"
+msgstr "ایرانسل"
+
+#: src/app/application/application-manager/list-applications/list-applications.template.html:34
+#: src/app/application/application-manager/new-application/new-application.controller.js:8
+msgid "New Application"
+msgstr "برنامه تازه"
+
+#: src/app/application/application-version-manager/list-application-versions/list-application-versions.template.html:22
+#: src/app/application/application-version-manager/new-application-version/new-application-version.controller.js:9
+msgid "New Application Version"
+msgstr "نسخه تازه"
+
+#: src/app/application/category-manager/list-categories/list-categories.template.html:21
+#: src/app/application/category-manager/new-category/new-category.controller.js:8
+msgid "New Category"
+msgstr "دسته تازه"
+
+#: src/app/application/product-manager/list-products/list-products.template.html:19
+#: src/app/application/product-manager/new-product/new-product.controller.js:9
+msgid "New Product"
+msgstr "محصول تازه"
+
+#: src/app/core/factories/http-interceptor.js:59
+msgid "No Access To :"
+msgstr "عدم دسترسی به :"
+
+#: src/app/core/factories/http-interceptor.js:55
+msgid "No Route :"
+msgstr "مسیر یافت نشد‌ :"
+
+#: src/app/application/application-manager/list-applications/list-applications.controller.js:72
+#: src/app/application/application-version-manager/list-application-versions/list-application-versions.controller.js:41
+msgid "Not Published"
+msgstr "انتشار نیافته"
+
+#: src/app/application/application-manager/list-applications/list-applications.controller.js:68
+#: src/app/application/application-version-manager/list-application-versions/list-application-versions.controller.js:37
+msgid "Not Verified"
+msgstr "بررسی نشده"
+
+#: src/app/application/application-manager/edit-application/edit-application.controller.js:43
+#: src/app/application/application-manager/list-applications/list-applications.controller.js:198
+#: src/app/application/application-manager/list-applications/list-applications.controller.js:211
+#: src/app/application/application-manager/new-application/new-application.controller.js:52
+#: src/app/application/application-version-manager/edit-application-version/edit-application-version.controller.js:38
+#: src/app/application/application-version-manager/list-application-versions/list-application-versions.controller.js:137
+#: src/app/application/application-version-manager/list-application-versions/list-application-versions.controller.js:144
+#: src/app/application/application-version-manager/new-application-version/new-application-version.controller.js:46
+#: src/app/application/category-manager/edit-category/edit-category.controller.js:22
+#: src/app/application/category-manager/new-category/new-category.controller.js:25
+#: src/app/application/product-manager/edit-product/edit-product.controller.js:39
+#: src/app/application/product-manager/list-products/list-products.controller.js:108
+#: src/app/application/product-manager/new-product/new-product.controller.js:61
+#: src/app/core/factories/http-interceptor.js:50
+#: src/app/core/factories/http-interceptor.js:55
+#: src/app/core/factories/http-interceptor.js:59
+#: src/app/core/factories/http-interceptor.js:63
+#: src/app/core/factories/http-interceptor.js:67
+msgid "Notification"
+msgstr "پیام"
+
+#: src/app/application/application-manager/application-form.partial.html:35
+#: src/app/application/application-version-manager/list-application-versions/list-application-versions.controller.js:82
+#: src/app/application/product-manager/list-products/list-products.controller.js:72
+msgid "Package Name"
+msgstr "نام بسته"
+
+#: src/app/application/application-manager/application-form.partial.html:22
+#: src/app/application/application-manager/application-form.partial.html:38
+#: src/app/application/application-manager/application-form.partial.html:46
+#: src/app/application/application-manager/application-form.partial.html:86
+#: src/app/application/application-version-manager/application-version-form.partial.html:26
+#: src/app/application/application-version-manager/application-version-form.partial.html:35
+#: src/app/application/application-version-manager/application-version-form.partial.html:45
+#: src/app/application/application-version-manager/application-version-form.partial.html:70
+#: src/app/application/category-manager/category-form.partial.html:26
+#: src/app/application/product-manager/product-form.partial.html:107
+#: src/app/application/product-manager/product-form.partial.html:125
+#: src/app/application/product-manager/product-form.partial.html:28
+#: src/app/application/product-manager/product-form.partial.html:39
+#: src/app/application/product-manager/product-form.partial.html:57
+#: src/app/application/product-manager/product-form.partial.html:71
+msgid "Please fill this field"
+msgstr "لطفا این مورد را وارد کنید"
+
+#: src/app/application/product-manager/product.service.js:33
+msgid "PostPaid"
+msgstr "پرداخت اشتراکی"
+
+#: src/app/application/product-manager/product.service.js:37
+msgid "PrePaid"
+msgstr "پرداخت یکباره"
+
+#: src/app/application/product-manager/list-products/list-products.controller.js:67
+msgid "Price"
+msgstr "قیمت"
+
+#: src/app/application/product-manager/product-form.partial.html:65
+msgid "Price (rial)"
+msgstr "قیمت (ریال)"
+
+#: src/app/application/product-manager/product-form.partial.html:79
+msgid "Price in letters"
+msgstr "قیمت به حروف"
+
+#: src/app/application/application-manager/list-applications/list-applications.controller.js:135
+#: src/app/layouts/sidebar/sidebar.html:95
+msgid "Products"
+msgstr "محصول‌ها"
+
+#: src/app/application/product-manager/list-products/list-products.template.html:5
+#: src/app/layouts/sidebar/sidebar.html:108
+msgid "Products List"
+msgstr "فهرست محصولات"
+
+#: src/app/application/application-manager/list-applications/list-applications.controller.js:71
+#: src/app/application/application-version-manager/list-application-versions/list-application-versions.controller.js:40
+#: src/app/application/product-manager/list-products/list-products.controller.js:35
+msgid "Published"
+msgstr "انتشار یافته"
+
+#: src/app/application/application-manager/list-applications/list-applications.controller.js:178
+#: src/app/application/application-version-manager/list-application-versions/list-application-versions.controller.js:117
+#: src/app/application/product-manager/list-products/list-products.controller.js:88
+msgid "Published At"
+msgstr "انتشار یافته در"
+
+#: src/app/application/application-manager/edit-application/edit-application.controller.js:43
+#: src/app/application/application-manager/new-application/new-application.controller.js:52
+#: src/app/application/application-version-manager/edit-application-version/edit-application-version.controller.js:38
+#: src/app/application/application-version-manager/new-application-version/new-application-version.controller.js:46
+#: src/app/application/category-manager/edit-category/edit-category.controller.js:22
+#: src/app/application/category-manager/new-category/new-category.controller.js:25
+#: src/app/application/product-manager/edit-product/edit-product.controller.js:39
+#: src/app/application/product-manager/new-product/new-product.controller.js:61
+msgid "Request Done successfully"
+msgstr "درخواست با موفقیت انجام شد"
+
+#: src/app/application/application-manager/list-applications/list-applications.controller.js:198
+#: src/app/application/application-manager/list-applications/list-applications.controller.js:211
+#: src/app/application/application-version-manager/list-application-versions/list-application-versions.controller.js:137
+#: src/app/application/application-version-manager/list-application-versions/list-application-versions.controller.js:144
+#: src/app/application/product-manager/list-products/list-products.controller.js:108
+msgid "Request Sent successfully"
+msgstr "درخواست با موفقیت ارسال شد"
+
+#: src/app/widgets/sms-area/sms-area.template.html:9
+msgid "Review"
+msgstr "بازبینی"
+
+#: src/app/application/product-manager/product-form.partial.html:24
+msgid "SKU"
+msgstr "اس‌کی‌یو"
+
+#: src/app/layouts/app.html:23
+msgid "Search..."
+msgstr "جستجو..."
+
+#: src/app/layouts/sidebar/sidebar.controller.js:25
+msgid "Select Application"
+msgstr "انتخاب برنامه"
+
+#: src/app/application/product-manager/list-products/list-products.controller.js:36
+msgid "Stopped"
+msgstr "متوقف"
+
+#: src/app/application/application-manager/application-form.partial.html:105
+#: src/app/application/application-version-manager/application-version-form.partial.html:79
+#: src/app/application/category-manager/category-form.partial.html:35
+#: src/app/application/product-manager/product-form.partial.html:151
+msgid "Submit"
+msgstr "ارسال"
+
+#: src/app/application/product-manager/product.service.js:20
+msgid "Subs"
+msgstr "اشتراکی"
+
+#: src/app/widgets/sms-area/sms-area.template.html:4
+msgid "Text"
+msgstr "متن"
+
+#: src/app/application/product-manager/product-form.partial.html:113
+#: src/app/application/product-manager/product-form.partial.html:131
+msgid "This Value is Higher than Subscription Period!"
+msgstr "این مقدار از دوره عضویت بیشتر است!"
+
+#: src/app/application/product-manager/product-form.partial.html:110
+#: src/app/application/product-manager/product-form.partial.html:128
+#: src/app/application/product-manager/product-form.partial.html:73
+msgid "This Value is Lower than Min!"
+msgstr "مقدار وارد شده از کمینه کمتر است!"
+
+#: src/app/application/application-manager/application-form.partial.html:43
+#: src/app/application/application-manager/list-applications/list-applications.controller.js:114
+#: src/app/application/application-version-manager/application-version-form.partial.html:42
+#: src/app/application/application-version-manager/list-application-versions/list-application-versions.controller.js:72
+#: src/app/application/category-manager/category-form.partial.html:23
+#: src/app/application/category-manager/list-categories/list-categories.controller.js:51
+#: src/app/application/product-manager/list-products/list-products.controller.js:62
+#: src/app/application/product-manager/product-form.partial.html:36
+msgid "Title"
+msgstr "عنوان"
+
+#: src/app/application/product-manager/product-form.partial.html:103
+msgid "Trial Period"
+msgstr "دوره آزمایشی"
+
+#: src/app/application/product-manager/product-form.partial.html:54
+msgid "Type"
+msgstr "نوع"
+
+#: src/app/core/factories/http-interceptor.js:67
+msgid "Unknown Error, Code ="
+msgstr "خطای نامعلوم، کد خطا = "
+
+#: src/app/application/category-manager/list-categories/list-categories.controller.js:64
+msgid "Updated At"
+msgstr "بروزرسانی"
+
+#: src/app/layouts/sidebar/sidebar.html:147
+#: src/app/user/profile-user/language/language.partial.html:9
+msgid "User Profile"
+msgstr "پروفایل کاربر"
+
+#: src/app/application/application-manager/list-applications/list-applications.controller.js:67
+#: src/app/application/application-version-manager/list-application-versions/list-application-versions.controller.js:36
+msgid "Verified"
+msgstr "بررسی شده"
+
+#: src/app/application/application-manager/list-applications/list-applications.controller.js:160
+#: src/app/application/application-version-manager/list-application-versions/list-application-versions.controller.js:99
+msgid "Verified At"
+msgstr "بررسی شده در"
+
+#: src/app/application/application-version-manager/application-version-form.partial.html:23
+msgid "Version Code"
+msgstr "کد نسخه"
+
+#: src/app/application/application-version-manager/list-application-versions/list-application-versions.controller.js:77
+msgid "Version Name"
+msgstr "نام نسخه"
+
+#: src/app/application/application-manager/list-applications/list-applications.controller.js:141
+#: src/app/layouts/sidebar/sidebar.html:73
+msgid "Versions"
+msgstr "نسخه‌ها"
+
+#: src/app/layouts/sidebar/sidebar.html:86
+msgid "Versions List"
+msgstr "فهرست نسخه‌ها"
+
+#: src/app/widgets/vendor-select/vendor-select.template.html:2
+msgid "vendor"
+msgstr "فروشنده"
+
+#~ msgid "Add New Application"
+#~ msgstr "برنامه تازه"
+
+#~ msgid "Applications"
+#~ msgstr "برنامه‌ها"
+
+#~ msgid "Auto Renewing"
+#~ msgstr "تمدید خودکار"
+
+#~ msgid "Categories"
+#~ msgstr "دسته‌ها"
+
+#~ msgid "Subscription Period"
+#~ msgstr "دوره عضویت (روز)"
+
+#~ msgid "Subscription Type"
+#~ msgstr "نوع عضویت"
+
+#~ msgid "Yes"
+#~ msgstr "بله"

@@ -1,0 +1,12 @@
+<div>
+    <div ng-if="row.entity.published_at !== null" class="ui-grid-cell-contents ltr">{{COL_FIELD}}</div>
+    <div ng-if="row.entity.published_at === null" ng-click="$event.stopPropagation()">
+        <a mwl-confirm on-confirm="grid.appScope.publishApplication(row.entity)"
+           class="btn btn-icon-only default" confirm-button-type="danger" cancel-button-type="default"
+           ng-if="!row.entity.enabled" placement="{{grid.appScope.alignment}}"
+           confirm-text="{{ 'Confirm' | translate }} <i class='glyphicon glyphicon-ok'></i>"
+           cancel-text="{{ 'Cancel' | translate }} <i class='glyphicon glyphicon-remove'></i>"
+           uib-tooltip="{{'Enable'|translate}}">
+            <i class="fa fa-square-o"></i> </a>
+    </div>
+</div>
